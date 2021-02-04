@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import datetime
 import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
-df=pd.read_excel('C:\\Users\\11942\\Desktop\每日反馈数据.xlsx')
+df=pd.read_excel('每日反馈数据.xlsx')
 df=df.dropna(how='any',axis=0)
 for i in range(0, len(df)):
     df.iloc[i, 4] = df.iloc[i, 4].date()
